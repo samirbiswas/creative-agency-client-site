@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import './Service.css'
 const Service = (props) => {
     
-    const {title, picture, description} = props.service;
+    const {title, picture, description,id} = props.service;
     console.log(title);
     return (
        
         <div className="card shadow-sm text-center " >
-            <Link to={`/customar/${title}`}>
+            <Link to={`/customar/${id}`}>
             <div className="card-body">
                 
             <img className="mx-0" src={picture} alt="" width="60"/>

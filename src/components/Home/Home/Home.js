@@ -18,8 +18,6 @@ const Home = () => {
             <PreviousWork></PreviousWork>
             <Clients></Clients>
             <Contact></Contact>
-            
-
         </div>
     );
 };

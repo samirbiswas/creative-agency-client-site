@@ -4,7 +4,8 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Customar from './components/Customar/Customar';
+import Customar from './components/Dashboard/Customar/Customar';
+import Dashboard from './components/Dashboard/Dashboard';
 import Home from './components/Home/Home/Home';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
@@ -25,8 +26,8 @@ function App() {
             <Login></Login>
           </Route>
 
-          <PrivateRoute  path='/customar/:title'>
-            <Customar></Customar>
+          <PrivateRoute  path='/customar/:id'>
+            <Dashboard></Dashboard>
           </PrivateRoute>
 
         </Switch>
