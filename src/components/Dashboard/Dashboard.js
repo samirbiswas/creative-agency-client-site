@@ -1,7 +1,6 @@
 import React from 'react';
-import Customar from './Customar/Customar';
+import AddOrderList from './AddOrderList/AddOrderList';
 import DashNav from './DashNav/DashNav';
-import New from './New/New';
 import Sitebar from './Sitebar/Sitebar';
 
 const Dashboard = () => {
@@ -10,19 +9,16 @@ const Dashboard = () => {
            <DashNav></DashNav>
 
             <div className='row'>
-                <div className="col-md-4 bg-secondary">
+                <div className="col-md-4 bg-secondary ">
                      <Sitebar></Sitebar>
                 </div>
-         
-                <div className="col-md-8">
 
-                <Customar></Customar>
-                <New path='/order'></New>
+                    <div className="col-md-8">
+                        <AddOrderList></AddOrderList>
+                    </div>
                 </div>
-                
-            </div>
-          
-        </div>
+          </div>
+        
     );
 };
 

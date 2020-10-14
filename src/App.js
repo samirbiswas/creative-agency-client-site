@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Customar from './components/Dashboard/Customar/Customar';
+import AddOrder from './components/Dashboard/AddOrder/AddOrder';
 import Dashboard from './components/Dashboard/Dashboard';
 import Home from './components/Home/Home/Home';
 import Login from './components/Login/Login';
@@ -29,6 +29,10 @@ function App() {
           <PrivateRoute  path='/customar/:id'>
             <Dashboard></Dashboard>
           </PrivateRoute>
+          
+          <Route path='/order'>
+           <AddOrder></AddOrder>
+          </Route>
 
         </Switch>
       </Router>

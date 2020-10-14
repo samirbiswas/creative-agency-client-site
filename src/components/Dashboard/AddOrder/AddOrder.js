@@ -2,14 +2,13 @@ import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import {useParams } from 'react-router-dom';
 import { UserContext } from '../../../App';
-
-import './Customer.css';
-import Data from '../../../FakaData'
-const Customar = () => {
-    const {id} = useParams();
-    const value = Data.find(dt=> dt.id && dt.id.toString() === id.toString());
-  
+import Data from '../../../FakaData';
+const AddOrder = () => {
+    
+    
     const [loggesinUser, setLoggedInUser] = useContext(UserContext);
+    const {id} = useParams();
+    const value = Data.find(dt=> dt.id && dt.id.toString()=== id.toString());
     const { register, handleSubmit } = useForm();
    
   const onSubmit = (data) => {
@@ -54,4 +53,4 @@ const Customar = () => {
     );
 };
 
-export default Customar;
+export default AddOrder;
