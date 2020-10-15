@@ -6,7 +6,7 @@ const PreviousWork = () => {
     return (
         <div classNameName='container'>
             <div className='mt-5 mb-5'>
-                <h3 className='text-center'>This Is Our Previous Work History</h3>
+                <h3 className='text-center'>Here are some of <span style={{color:'#7AB259'}}>our works</span> </h3>
             </div>
             <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
   <div className="carousel-inner">

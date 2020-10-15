@@ -4,8 +4,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import AddOrder from './components/Dashboard/AddOrder/AddOrder';
+
 import AddOrderList from './components/Dashboard/AddOrderList/AddOrderList';
+import Admin from './components/Dashboard/Admin/Admin';
 import Dashboard from './components/Dashboard/Dashboard';
 import Review from './components/Dashboard/Review/Review';
 import Home from './components/Home/Home/Home';
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route path="/review">
            <Review></Review>
+          </Route>
+          <Route path="/addAdmin">
+           <Admin></Admin>
           </Route>
 
         </Switch>

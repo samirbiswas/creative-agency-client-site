@@ -16,7 +16,7 @@ useEffect(() => {
                 <section style={{marginTop:'5%'}}>
                 <div className="container">
                     <div className="section-header text-center">
-                         <h2 className="text-primary ">Clients Feedback</h2>
+                         <h2 style={{color:'#RRGGBB'}}>Clients <span style={{color:'#7AB259'}}>Feedback</span></h2>
                         
                     </div>
                     <div style={{marginTop:'100px'}}>

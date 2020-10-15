@@ -3,7 +3,7 @@ import Footer from '../Footer/Footer';
 import './Contact.css'
 const Contact = () => {
     return (
-        <section className='cotact-detail '>
+        <section id='footers' className='cotact-detail '>
             <div className="container mt-5">
             <div className="row mt-5">
                 <div className="col-md-4 mt-5">
@@ -26,7 +26,7 @@ const Contact = () => {
                 <textarea style={{height:'150px'}} type="text" class="form-control" id="exampleInputName" placeholder="Your message"/>
             </div>
                 
-                <button type="submit" class="btn btn-primary">Send</button>
+                <button type="submit" class="btn btn-dark">Send</button>
                 </form>
                 </div>
             </div>

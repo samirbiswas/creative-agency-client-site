@@ -10,7 +10,7 @@ const Dashboard = () => {
            <DashNav></DashNav>
 
             <div className='row'>
-                <div className="col-md-4 bg-secondary ">
+                <div style={{backgroundColor:'#DDDDDD'}} className="col-md-4">
                      <Sitebar></Sitebar>
                 </div>
 

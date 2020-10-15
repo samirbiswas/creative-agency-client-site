@@ -8,9 +8,10 @@ const Sitebar = () => {
    
     return (
             <div className='container'>
-                <Link> <p>Add Order</p></Link>
-                <Link to='/order'> <p>Order List</p></Link>
-                <Link to='/review'> <p>Review</p></Link>
+                
+                <Link to='/order'> <p className='text-light'>Order List</p></Link>
+                <Link to='/review'> <p className='text-light'>Review</p></Link>
+                  <Link to='/addAdmin'> <p className='text-light'>Add Admin</p></Link>
             </div>
     );
 };

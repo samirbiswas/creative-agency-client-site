@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../../images/logos/logo.png';
 import './NavBar.css'
 const NavBar = () => {
@@ -16,16 +17,17 @@ const NavBar = () => {
         <a className="nav-link mr-4" href="/">Home <span className="sr-only">(current)</span></a>
       </li>
       <li className="nav-item">
-        <a className="nav-link mr-4" href="/">Our Portfolio</a>
+        <a className="nav-link mr-4" href="#servicss">Our Portfolio</a>
       </li>
+
       <li className="nav-item">
         <a className="nav-link mr-4" href="/">Our Team</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link mr-4" href="/">Contact Us</a>
+        <a className="nav-link mr-4" href="#footers">Contact Us</a>
       </li>
-      <li className="nav-item">
-        <a className="nav-link mr-4" href="/">Login</a>
+      <li className="nav-item text-decoration-none">
+       <Link to='/login' ><a className="nav-link mr-4 bg-dark text-light px-3 rounded text-decoration-none" href="/">Login</a></Link>
       </li>
     
       

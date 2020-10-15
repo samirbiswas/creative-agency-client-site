@@ -8,7 +8,7 @@ import './Brand.css'
 const Brand = () => {
     return (
         <div className='container'>
-            <div className="row d-flex justify-content-between brand-images mt-5 ">
+            <div style={{marginTop:'80px'}} className="row d-flex justify-content-between brand-images ">
             
             <img src={slack} className="img-fluid" alt=""></img>
             <img src={google} className="img-fluid" alt=""></img>
