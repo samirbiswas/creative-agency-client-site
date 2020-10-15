@@ -5,7 +5,9 @@ import {
   Route,
 } from "react-router-dom";
 import AddOrder from './components/Dashboard/AddOrder/AddOrder';
+import AddOrderList from './components/Dashboard/AddOrderList/AddOrderList';
 import Dashboard from './components/Dashboard/Dashboard';
+import Review from './components/Dashboard/Review/Review';
 import Home from './components/Home/Home/Home';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
@@ -29,9 +31,11 @@ function App() {
           <PrivateRoute  path='/customar/:id'>
             <Dashboard></Dashboard>
           </PrivateRoute>
-          
-          <Route path='/order'>
-           <AddOrder></AddOrder>
+          <Route path="/order">
+           <AddOrderList></AddOrderList>
+          </Route>
+          <Route path="/review">
+           <Review></Review>
           </Route>
 
         </Switch>

@@ -8,7 +8,7 @@ const AddOrder = () => {
     
     const [loggesinUser, setLoggedInUser] = useContext(UserContext);
     const {id} = useParams();
-    const value = Data.find(dt=> dt.id && dt.id.toString()=== id.toString());
+    const value = Data.find(dt=> dt.id && dt.id.toString() === id.toString());
     const { register, handleSubmit } = useForm();
    
   const onSubmit = (data) => {
@@ -43,6 +43,10 @@ const AddOrder = () => {
                     <textarea value={value.description} id="des" name="description" placeholder="Your Project Details" className="form-control" ref={register({ required: true })}/>
                     <br/>
                     <input id="price" name="price" placeholder="price" className="form-control" ref={register({ required: true })}/>
+                    <br/>
+                    <level>Upload File</level>
+                    <br/>
+                    <input id="file" type='file' name="file" placeholder="upload file" className="form-control-file"/>
                     <br/>
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>

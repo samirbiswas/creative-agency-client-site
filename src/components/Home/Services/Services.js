@@ -8,13 +8,13 @@ const Services = () => {
     const [servicess,setServicess] = useState(Data);
   
     return (
-        <section style={{marginTop:'100px'}}>
+        <section style={{marginTop:'80px'}}>
         <div className="container">
             <div className="section-header text-center">
-                 <h2 className="text-primary ">Provide awesome <span>services</span></h2>
+                 <h3 className="text-primary ">Provide awesome <span>services</span></h3>
                 
             </div>
-            <div style={{marginTop:'100px'}} className= 'card-deck' >
+            <div style={{marginTop:'80px'}} className= 'card-deck' >
                  {
                     servicess.map(service=> <Service key={service.id} service={service}></Service>)
                  }

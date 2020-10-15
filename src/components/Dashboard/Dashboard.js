@@ -1,4 +1,5 @@
 import React from 'react';
+import AddOrder from './AddOrder/AddOrder';
 import AddOrderList from './AddOrderList/AddOrderList';
 import DashNav from './DashNav/DashNav';
 import Sitebar from './Sitebar/Sitebar';
@@ -14,7 +15,7 @@ const Dashboard = () => {
                 </div>
 
                     <div className="col-md-8">
-                        <AddOrderList></AddOrderList>
+                        <AddOrder></AddOrder>
                     </div>
                 </div>
           </div>
