@@ -7,7 +7,7 @@ const Admin = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
-        fetch('http://localhost:5000/adminAdd',{
+        fetch('https://fast-temple-74960.herokuapp.com/adminAdd',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json',
                         'Accept': 'application/json' },
@@ -38,8 +38,6 @@ const Admin = () => {
                     <br/>
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
-
-
 
                  </div>
 

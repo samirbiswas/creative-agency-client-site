@@ -5,7 +5,6 @@ import { UserContext } from '../../../App';
 import Data from '../../../FakaData';
 const AddOrder = () => {
     
-    
     const [loggesinUser, setLoggedInUser] = useContext(UserContext);
     const {id} = useParams();
     const value = Data.find(dt=> dt.id && dt.id.toString() === id.toString());
@@ -13,7 +12,7 @@ const AddOrder = () => {
    
   const onSubmit = (data) => {
     const details = {picture: value.picture, ...data};
-    fetch('http://localhost:5000/addData',{
+    fetch('https://fast-temple-74960.herokuapp.com/addData',{
         method: 'POST',
         headers: { 'Content-Type': 'application/json',
                     'Accept': 'application/json' },

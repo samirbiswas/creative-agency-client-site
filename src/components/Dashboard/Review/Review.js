@@ -10,7 +10,7 @@ const Review = () => {
     const onSubmit = (data)=>{
         const reviewData = {...data, ...loggesinUser};
             
-        fetch('http://localhost:5000/addreview',{
+        fetch('https://fast-temple-74960.herokuapp.com/addreview',{
         method: 'POST',
         headers: { 'Content-Type': 'application/json',
                     'Accept': 'application/json' },

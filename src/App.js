@@ -6,9 +6,11 @@ import {
 } from "react-router-dom";
 
 import AddOrderList from './components/Dashboard/AddOrderList/AddOrderList';
+import AddServices from './components/Dashboard/AddServices/AddServices';
 import Admin from './components/Dashboard/Admin/Admin';
 import Dashboard from './components/Dashboard/Dashboard';
 import Review from './components/Dashboard/Review/Review';
+import ServiceList from './components/Dashboard/ServiceList/ServiceList';
 import Home from './components/Home/Home/Home';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
@@ -41,7 +43,13 @@ function App() {
           <Route path="/addAdmin">
            <Admin></Admin>
           </Route>
-
+          <Route path="/serviceList">
+           <ServiceList></ServiceList>
+          </Route>
+          <Route path="/addService">
+           <AddServices></AddServices>
+          </Route>
+          
         </Switch>
       </Router>
 

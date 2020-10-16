@@ -9,7 +9,7 @@ const AddOrderList = () => {
 
     const [order, setOrder] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/order?email=' + loggedInUser.email)
+        fetch('https://fast-temple-74960.herokuapp.com/order?email=' + loggedInUser.email)
         .then(res=>res.json())
         .then(result=>{
             setOrder(result)

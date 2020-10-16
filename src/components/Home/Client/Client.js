@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Client = (props) => {
-    console.log(props.client);
+    
     const {riviewName,photoURL,riviewTitle,riviewDes} = props.client;
     return (
         <div className='col-md-4'>

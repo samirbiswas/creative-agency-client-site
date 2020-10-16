@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Service from '../Service/Service';
 import Data from '../../../FakaData'
 const Services = () => {
     const [servicess,setServicess] = useState(Data);
-  
+    // const [addService,setAddService] = useState([]);
+    // useEffect(() => {
+    //     fetch('http://localhost:5000/service')
+    //         .then(res => res.json())
+    //         .then(data => setAddService(data))
+    // }, [])
+
     return (
         <section id='servicss' style={{marginTop:'80px'}}>
         <div className="container">
@@ -19,6 +25,7 @@ const Services = () => {
                  }
 
             </div>
+
         </div>
     </section>
     );
