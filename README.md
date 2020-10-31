@@ -1,5 +1,5 @@
 # Creative Agency Wep App
-Link [Live Link] (https://www.google.com/) 
+[Named Link](http://www.google.com/ "Live Link")
 ## Features
 * Responsive landing page. In home page show all services and some reviews.
 * Two types of User Admin and Customer. Every one can log in using google account and see their dashboard as their user type.
